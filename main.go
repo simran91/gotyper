@@ -1,17 +1,17 @@
 package main
 
 import "fmt"
+import "time"
+import "./typetext"
 
 func main() {
-    text := getData()
-    typeText(text)
+	sleepTime := time.Duration(3500000)
+	text := getData()
+	typetext.TypeText(sleepTime, text)
+	fmt.Println()
 }
 
 func getData() string {
-    str := "This is a test, this is only a test!"
-    return str
-}
-
-func typeText(str string) {
-    fmt.Println(str)
+	str := "This is a test, this is only a test!"
+	return str
 }

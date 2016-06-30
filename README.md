@@ -1,1 +1,3 @@
 # gotyper
+
+Outputs a given string of text to the screen iterating over the string (a byte at a time, while cycling through from the lowest byte to the current byte)... 
